@@ -11,6 +11,7 @@
 		F120E2D72C30F5FB00C56CDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120E2D62C30F5FB00C56CDE /* ContentView.swift */; };
 		F120E2D92C30F5FC00C56CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F120E2D82C30F5FC00C56CDE /* Assets.xcassets */; };
 		F120E2DC2C30F5FC00C56CDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F120E2DB2C30F5FC00C56CDE /* Preview Assets.xcassets */; };
+		F120E2E42C37B98D00C56CDE /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120E2E32C37B98D00C56CDE /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F120E2D62C30F5FB00C56CDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F120E2D82C30F5FC00C56CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F120E2DB2C30F5FC00C56CDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F120E2E32C37B98D00C56CDE /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				F120E2D42C30F5FB00C56CDE /* Networking_M1L6_URLSessionApp.swift */,
 				F120E2D62C30F5FB00C56CDE /* ContentView.swift */,
+				F120E2E22C37B97100C56CDE /* Model */,
 				F120E2D82C30F5FC00C56CDE /* Assets.xcassets */,
 				F120E2DA2C30F5FC00C56CDE /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				F120E2DB2C30F5FC00C56CDE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F120E2E22C37B97100C56CDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F120E2E32C37B98D00C56CDE /* SearchResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				F120E2D72C30F5FB00C56CDE /* ContentView.swift in Sources */,
 				F120E2D52C30F5FB00C56CDE /* Networking_M1L6_URLSessionApp.swift in Sources */,
+				F120E2E42C37B98D00C56CDE /* SearchResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

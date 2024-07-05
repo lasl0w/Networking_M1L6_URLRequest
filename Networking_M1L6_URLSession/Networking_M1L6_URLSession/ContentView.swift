@@ -41,7 +41,7 @@ struct ContentView: View {
                 // URLRequest returns a tuple (Data, response).  Quick Help
                 print(data)
                 print(response)
-                // don't need to open another task block b/c it's already 
+                // don't need to open another task block b/c it's already called in one
             }
             catch {
                 print(error)
