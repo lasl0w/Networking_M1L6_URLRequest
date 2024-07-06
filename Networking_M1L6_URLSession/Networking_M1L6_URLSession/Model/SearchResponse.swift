@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchResponse: Encodable {
+struct SearchResponse: Decodable {
     // must conform to Codable to parse JSON
     // Decodable:  turn JSON data into structures
     // Encodable:  turn structures into JSON  data
@@ -20,7 +20,7 @@ struct SearchResponse: Encodable {
     // would typically map to best practice naming totalResults
     var page: Int?
     var per_page: Int?
-    var photos: [Photo]
+    var photos: [Photo]?
     var next_page: String?
     
 

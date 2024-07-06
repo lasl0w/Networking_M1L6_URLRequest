@@ -37,8 +37,24 @@ struct ContentView: View {
             // 3. URLSession - it's async and it throws
             // Can't just use the URL b/c there is a header.  gotta pass the whole URLRequest
             do {
-                let (data, response) = try await URLSession.shared.data(for: request)
+                let (data, response) = try await 
+                URLSession.shared.data(for: request)
                 // URLRequest returns a tuple (Data, response).  Quick Help
+                
+                // 4. Parse the JSON
+                let decoder = JSONDecoder()
+                // when we use .self, we are declaring that structure as the type we will pass into
+                do {
+                    let searchResponse = try decoder.decode(SearchResponse.self, from: data)
+                    // (lldb) $  po searchRespone - will give the whole response
+                    for photo in searchResponse.photos! {
+                        print(photo)
+                    }
+                }
+                catch {
+                    print(error)
+                }
+              
                 print(data)
                 print(response)
                 // don't need to open another task block b/c it's already called in one
