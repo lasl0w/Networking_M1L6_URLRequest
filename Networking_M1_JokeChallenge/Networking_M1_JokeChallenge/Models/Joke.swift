@@ -15,20 +15,21 @@ struct Joke: Decodable {
     var category: String?
     var type: String?
     var joke: String?
-    var flags: [Flag]?
+    // HA!  Only model the fields you want.....
+    // var flags: Flags?
     var id: Int?
     var safe: Bool?
     var lang: String?
     
 }
 
-struct Flag: Decodable {
-    
-    var nsfw: Bool?
-    var religious: Bool?
-    var political: Bool?
-    var racist: Bool?
-    var sexist: Bool?
-    var explicit: Bool?
-    
-}
+//struct Flags: Decodable {
+//    
+//    var nsfw: Bool?
+//    var religious: Bool?
+//    var political: Bool?
+//    var racist: Bool?
+//    var sexist: Bool?
+//    var explicit: Bool?
+//    
+//}
